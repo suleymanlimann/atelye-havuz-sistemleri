@@ -9,7 +9,7 @@ const COMPANY = {
     whatsapp: "+90 505 348 88 31",
     email: "info@atelyehavuz.com",
     address: "Akhisar, Manisa",
-    instagram: "https://www.instagram.com/akhisaratelyehavuz",
+    instagram: "https://www.instagram.com/atelyehavuz",
     facebook: "https://www.facebook.com/share/1BDAkxaLfX/?mibextid=wwXIfr",
     googlePlaceShare: "https://share.google/tcbKywZ7ifc0rqayv",
 };
