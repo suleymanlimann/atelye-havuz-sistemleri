@@ -83,7 +83,7 @@ const Hero = () => (
                         <div className="flex items-center gap-2"><Droplets className="h-4 w-4" /> Ekipman</div>
                     </div>
                 </div>
-                <Card className="p-0 overflow-hidden bg-green-200 flex items-center justify-center">
+                <Card className="p-0 overflow-hidden bg-green-200 flex items-center justify-center h-[25em]">
                     <img
                         src="/hero-pool.jpg"
                         alt="Modern prefabrik havuz"
