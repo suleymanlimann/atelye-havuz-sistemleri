@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { PhoneCall, Mail, MapPin, Wrench, Layers3, Droplets, Star, Instagram, Facebook, MessageSquareHeart, Construction, Hammer } from "lucide-react";
+import { PhoneCall, Mail, MapPin, Wrench, Layers3, Droplets, Star, Instagram, Facebook, MessageSquareHeart, Construction, Hammer, Youtube } from "lucide-react";
 
 const COMPANY = {
     name: "Atelye Havuz Sistemleri",
@@ -11,6 +11,7 @@ const COMPANY = {
     address: "Akhisar, Manisa",
     instagram: "https://www.instagram.com/atelyehavuz",
     facebook: "https://www.facebook.com/share/1BDAkxaLfX/?mibextid=wwXIfr",
+    youtube: "https://www.youtube.com/channel/UCYjbwObs_rUD9jlh4kGP0-A",
     googlePlaceShare: "https://share.google/tcbKywZ7ifc0rqayv",
 };
 
@@ -202,6 +203,8 @@ const InstagramSection = () => (
             <div className="mt-6 text-center flex justify-center gap-4">
                 <a href={COMPANY.instagram} className="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-pink-600 text-white text-sm shadow hover:opacity-90"><Instagram className="h-4 w-4" /> Instagram</a>
                 <a href={COMPANY.facebook} className="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-blue-600 text-white text-sm shadow hover:opacity-90"><Facebook className="h-4 w-4" /> Facebook</a>
+                <a href={COMPANY.youtube} className="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-pink-600 text-white text-sm shadow hover:opacity-90"><Youtube className="h-4 w-4" /> Youtube</a>
+
             </div>
         </Container>
     </section>
