@@ -17,9 +17,9 @@ const COMPANY = {
 const MAP_EMBED = `https://www.google.com/maps?q=${encodeURIComponent(COMPANY.name + " " + COMPANY.address)}&output=embed`;
 
 const initialReviews = [
-    { author: "A. Yılmaz", rating: 5, text: "Anahtar teslim prefabrik havuzumuzu tam zamanında teslim ettiler." },
-    { author: "E. Demir", rating: 5, text: "Bakım ekibi çok profesyonel. Havuzumuz hep pırıl pırıl." },
-    { author: "S. Kaya", rating: 5, text: "Malzeme satışında doğru yönlendirme ve iyi fiyat." },
+    { author: "P. Su", rating: 5, text: "Göstermiş olduğunuz ilgi ve alakadan dolayı çok teşekkür ederim. İşinizi severek yaptığınızı, havuzumuzu gördüğüm anda anlamış oldum. Elinize sağlık 👏👏" },
+    { author: "D. Özçelik", rating: 5, text: "Profesyonel ekip. İstediğim gibi kusursuz bir iş çıkardılar ve hiç zaman almadılar. Zeytinliova havuzum harika görünüyor. Her birine minnettarım." },
+    { author: "S. Yeşildağ", rating: 5, text: "İşlerini titizlikle yaptılar. Az bir bütçe ile büyük konfor sunmaktalar" },
 ];
 
 const Container = ({ className = "", id, children }) => (
