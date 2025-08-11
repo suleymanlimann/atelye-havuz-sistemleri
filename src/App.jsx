@@ -194,21 +194,52 @@ const ReviewsSection = () => {
 };
 
 const InstagramSection = () => (
-    <section id="instagram" className="py-16 sm:py-24 bg-gradient-to-b from-white to-teal-50/40">
+    <section
+        id="instagram"
+        className="py-16 sm:py-24 bg-gradient-to-b from-white to-teal-50/40"
+    >
         <Container>
             <SectionTitle title="Instagram" subtitle="Güncel işlerimizden kareler" />
-            <Card>
-                <p className="text-sm text-gray-600">Instagram akışını göstermek için widget iframe URL’si veya tekil post linkleri eklenebilir.</p>
-            </Card>
-            <div className="mt-6 text-center flex justify-center gap-4">
-                <a href={COMPANY.instagram} className="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-pink-600 text-white text-sm shadow hover:opacity-90"><Instagram className="h-4 w-4" /> Instagram</a>
-                <a href={COMPANY.facebook} className="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-blue-600 text-white text-sm shadow hover:opacity-90"><Facebook className="h-4 w-4" /> Facebook</a>
-                <a href={COMPANY.youtube} className="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-pink-600 text-white text-sm shadow hover:opacity-90"><Youtube className="h-4 w-4" /> Youtube</a>
 
+            {/* SnapWidget embed */}
+            <div className="rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                <iframe
+                    title="Akhisar Atelye Havuz Sistemleri"
+                    src="https://snapwidget.com/embed/1105048"
+                    className="w-full h-[560px]"  
+                    allow="clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    frameBorder="0"
+                    scrolling="no"
+                    style={{ border: "none", overflow: "hidden" }}
+                />
+            </div>
+
+            <div className="mt-6 text-center flex justify-center gap-4">
+                <a
+                    href={COMPANY.instagram}
+                    className="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-pink-600 text-white text-sm shadow hover:opacity-90"
+                >
+                    <Instagram className="h-4 w-4" /> Instagram
+                </a>
+                <a
+                    href={COMPANY.facebook}
+                    className="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-blue-600 text-white text-sm shadow hover:opacity-90"
+                >
+                    <Facebook className="h-4 w-4" /> Facebook
+                </a>
+                {COMPANY.youtube && (
+                    <a
+                        href={COMPANY.youtube}
+                        className="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-red-600 text-white text-sm shadow hover:opacity-90"
+                    >
+                        <Youtube className="h-4 w-4" /> Youtube
+                    </a>
+                )}
             </div>
         </Container>
     </section>
 );
+
 
 const ContactSection = () => (
     <section id="contact" className="py-16 sm:py-24">
@@ -247,6 +278,7 @@ const Footer = () => (
             <div className="flex items-center gap-4">
                 <a href={COMPANY.instagram} className="hover:text-teal-700 inline-flex items-center gap-1"><Instagram className="h-4 w-4" /> Instagram</a>
                 <a href={COMPANY.facebook} className="hover:text-teal-700 inline-flex items-center gap-1"><Facebook className="h-4 w-4" /> Facebook</a>
+                <a href={COMPANY.youtube} className="hover:text-teal-700 inline-flex items-center gap-1"><Youtube className="h-4 w-4" /> Youtube</a>
             </div>
         </Container>
     </footer>
