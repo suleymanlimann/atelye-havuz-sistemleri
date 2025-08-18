@@ -206,7 +206,7 @@ const InstagramSection = () => (
                 <iframe
                     title="Akhisar Atelye Havuz Sistemleri"
                     src="https://snapwidget.com/embed/1105048"
-                    className="w-full h-[560px]"  
+                    className="w-full h-[560px]"
                     allow="clipboard-write; encrypted-media; picture-in-picture; web-share"
                     frameBorder="0"
                     scrolling="no"
