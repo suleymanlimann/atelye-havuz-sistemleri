@@ -69,7 +69,7 @@ const Hero = () => (
             <div className="grid lg:grid-cols-2 gap-10 items-center">
                 <div>
                     <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-4xl sm:text-5xl font-bold leading-tight">
-                        Prefabrik Havuzda <span className="text-teal-600">Anahtar Teslim</span> Konfor
+                        Akhisar ve Manisa’da Prefabrik Havuz Yapımı  <span className="text-teal-600">Anahtar Teslim</span> Konfor
                     </motion.h1>
                     <p className="mt-5 text-gray-600 text-base sm:text-lg max-w-xl">
                         {COMPANY.slogan}. Kazıdan kuruluma, izin süreçlerinden ilk çalıştırmaya kadar tüm detayları biz yönetelim.
