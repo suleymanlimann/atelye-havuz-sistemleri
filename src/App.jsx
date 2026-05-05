@@ -271,6 +271,30 @@ const ContactSection = () => (
     </section>
 );
 
+const Seo = () => (
+    <section className="py-12 bg-gray-50 border-t border-gray-100">
+        <Container>
+            <div className="max-w-3xl mx-auto text-center">
+
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                    Manisa Genelinde Havuz Hizmetleri
+                </h3>
+
+                <p className="text-sm text-gray-600 leading-relaxed">
+                    Atelye Havuz Sistemleri, Akhisar başta olmak üzere Manisa genelinde
+                    profesyonel havuz yapım şirketi olarak hizmet vermektedir.
+                    Şehzadeler, Yunusemre, Turgutlu, Salihli, Soma, Kırkağaç, Alaşehir,
+                    Sarıgöl, Kula, Demirci, Gördes, Selendi, Köprübaşı, Ahmetli ve
+                    Gölmarmara ilçelerinde prefabrik havuz yapımı, havuz bakımı ve
+                    ekipman hizmetleri sunuyoruz.
+                </p>
+
+            </div>
+        </Container>
+    </section>
+
+);
+
 const Footer = () => (
     <footer className="py-8 border-t border-gray-100 bg-white">
         <Container className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-600">
@@ -310,6 +334,7 @@ export default function AtelyeHavuzSite() {
             <ReviewsSection />
             <InstagramSection />
             <ContactSection />
+            <Seo />
             <Footer />
         </div>
     );
