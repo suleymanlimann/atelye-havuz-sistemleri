@@ -52,7 +52,7 @@ const Header = () => (
                 <img src="/atelye-logo.png" alt="Atelye Logo" className="h-9 w-9 object-contain" />
                 <span className="font-semibold">{COMPANY.name}</span>
             </a>
-            <nav className="hidden md:flex items-center gap-6 text-sm">
+            <nav className="hidden md:flex items-center gap-6">
                 {NAV.map((n) => (<a key={n.href} href={n.href} className="hover:text-teal-600 transition-colors">{n.label}</a>))}
             </nav>
             <a href={`https://wa.me/${COMPANY.whatsapp.replace(/\D/g, "")}`} className="inline-flex items-center gap-2 rounded-xl px-4 py-2 bg-teal-600 text-white text-sm shadow hover:opacity-90">
@@ -88,7 +88,7 @@ const Hero = () => (
                     <img
                         src="/hero-pool.jpg"
                         alt="Modern prefabrik havuz"
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-cover"
                     />
                 </Card>
             </div>
